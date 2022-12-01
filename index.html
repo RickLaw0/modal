@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROFIT</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="fancybox/jquery.fancybox.css" />
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="fancybox/jquery.fancybox.js"></script>
+  <script src='https://kit.fontawesome.com/2ee0245f3d.js' crossorigin='anonymous'></script>
+  <script src="responsiveslides.min.js"></script>
+  <script src="wow.min.js"></script>
+  <script src="funciones.js"></script>
+</head>
+<body>
+<div class="contenedor">
+    <section class="ancho1">
+        <article class="consulta">
+            <h4 class="wow animate__animated animate__wobble">A Dedicated Team of Experts</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, neque, voluptatum natus culpa vitae animi harum minima soluta cumque quisquam qui odit commodi est, nobis quos temporibus? Aliquid, iusto maxime.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus perspiciatis nulla facilis reprehenderit architecto exercitationem deleniti ad alias molestiae sed consectetur distinctio sunt, mollitia quis ipsa odio magnam enim! Doloribus!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo reprehenderit eum dicta fugit eius veniam. Optio, cupiditate! Eum, odio magnam in incidunt eveniet dolore voluptates molestiae iusto deserunt cum fugiat.
+            </p>
+            <header id="boton">
+                <a href="#" class="btn_modal" id="Btn">LEARN MORE</a>
+              </header>
+       </article>
+       <article class="consulta wow animate__animated animate__bounceInLeft">
+        <section class="ancho1">
+            <article class="consulta">
+                <div>
+                  <img src="imagenes/foto1.jpg" alt="">
+                </div>
+                <h4 class="wow animate__animated animate__wobble">JANETH WAGNERS</h4>
+                <p>
+                    HALRRDRESSER
+                </p>
+           </article>
+           <article class="consulta wow animate__animated animate__bounceInLeft">
+            <div>
+              <img src="imagenes/foto2.jpg" alt="">
+            </div>
+            <h4>ROBERT WAGNER</h4>
+            <p>
+                HALRRDRESSER
+            </p>
+        </article>
+    </article>
+ </section>
+
+ <section id="modal" class="fondomodal">
+    <div class="contenidomodal">
+      <div class="estructuramodal">
+        <h3>Contacts Us</h3>
+        <br />
+        <br />
+        <br />
+        <i id="cerrarbtn" class="cerrarmodal fas fa-times-circle"></i>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ab autem
+        amet obcaecati eveniet exercitationem ex sit quaerat. Atque laborum,
+        totam cum vel itaque rem voluptatibus recusandae nulla minus hic!
+      </p>
+      <div>
+        <nav class="contenedor_menu" id="caja_menu_jb">
+            <ul class="caja_menu">
+                <li><a href="#Inicio" class="btn_ancla">Name*</a></li>
+                <li><a href="#Nuestro" class="btn_ancla">Email*</a></li>
+                <li><a href="#Instructores" class="btn_ancla">Message*</a></li>
+            </ul>
+        </nav>
+    </div>
+    <a href="#" class="btn_modal" id="Btn">SUBMIT</a>
+    </div>
+  </section>
+  <!-- FUNCIONES JAVASCRIPT -->
+  <script>
+    var fondomodal = document.getElementById("modal");
+    var btn = document.getElementById("Btn");
+    var cerrar = document.getElementById("cerrarbtn");
+
+    function tiempo() {
+      fondomodal.style.display = "block";
+    }
+    setTimeout(tiempo, 5000);
+
+    btn.onclick = function () {
+      fondomodal.style.display = "block";
+    };
+    cerrar.onclick = function () {
+      fondomodal.style.display = "none";
+    };
+    window.onclick = function (event) {
+      if (event.target == fondomodal) {
+        fondomodal.style.display = "none";
+      }
+    };
+  </script>
+
+ </div>
+ </body>
+ </html>

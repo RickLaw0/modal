@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .ancho {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .body {
+    font-size: 16px;
+    line-height: 24px;
+    background-color: white;
+  }
+
+  .contenedor{
+    border: 3px;
+  }
+  
+  .contenedor h5{
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 30px;
+    color: brown;
+  }
+  
+  
+  .ancho1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    height: 500px;
+  }
+  
+  .consulta{
+    max-width: auto;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    background-color: white;
+    flex-wrap: wrap;
+    
+    height: 500px;
+  }
+  
+  .consulta figure{
+    max-width: 150px;
+    margin: auto;
+  }
+  
+  .consulta figure img{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  .consulta div img{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 100px;
+  }
+  
+  .consulta h4{
+    text-decoration: none;
+    padding: 15px;
+    border: 1px;
+    margin-top: -5px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+  }
+  
+  .consulta p{
+    padding: 15px;
+    text-align: center;
+  }
+  
+  
+  .consulta div{
+    margin: 20px;
+    max-width: 200px;
+    
+    border-radius: 5px;
+  }
+  
+  .consulta div a{
+    max-width: 100%;
+    border-radius: 100px;
+  }
+  
+  
+  .consulta div i{
+    color: brown;
+    font-size: 50px;
+    padding: 5px;
+  }
+  
+ 
+
+
+  .btn_modal {
+    text-decoration: none;
+    display: inline-block;
+    margin: auto;
+    border-radius: 40px;
+    background-color: #800000;
+    color: white;
+    padding: 10px 30px;
+    transition: all 1s;
+  }
+  .btn_modal:hover {
+    background-color: black;
+  }
+  
+  .foto {
+    margin: auto;
+    max-width: 500px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  .foto img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  .fondomodal {
+    display: none;
+    padding: 100px 10px;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* overflow: auto; */
+    transition: all 0.5s;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .contenidomodal {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+  }
+  .contenido h3 {
+    color: #800000;
+    font-size: 24px;
+  }
+  .estructuramodal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cerrarmodal {
+    cursor: pointer;
+    color: red;
+    font-size: 26px;
+    transition: all 0.5s;
+  }
+  .cerrarmodal:hover {
+    color: black;
+  }
+  @media screen and (max-width: 414px) {
+    .contenidomodal {
+      width: 95%;
+      padding: 10px;
+    }
+    .contenidomodal img {
+      height: 100px;
+    }
+    .cerrarmodal {
+      right: 20px;
+      margin-right: 10px;
+    }
+    .mascara {
+      padding: 20px;
+    }
+  }
+  
+  .contenedor_menu{
+    width: 500px;
+}
+
+.caja_menu {
+  list-style: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5px;
+  background-color: white;
+  width: 700px;
+}
+
+.caja_menu li {
+  text-decoration: none;
+  width: 100%;
+  background-color: white;
+  margin: 15px;
+  border: 1px black solid;
+  border-radius: 5px;
+}
+
+.caja_menu li a{
+  display: block;
+  text-decoration: none;
+  color: black;
+}
